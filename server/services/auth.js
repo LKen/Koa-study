@@ -16,8 +16,8 @@ const conf = require('../config')
 const { createUuid } = require('../utils')
 const SoftKey = require('../libs/SoftKey')
 const mSoftKey = new SoftKey()
-const _ukey_id = '5D5CF38A63651156'
-const _ukey = '6CB0737364C34BBBBC20AF4E97630DC2'
+const _ukey_id = ''
+const _ukey = ''
 
 const randomization = createUuid
 
