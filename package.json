@@ -1,0 +1,49 @@
+{
+  "name": "koa-ukey",
+  "version": "1.0.0",
+  "private": true,
+  "bin": "./bin/www",
+  "scripts": {
+    "start": "node bin/www",
+    "dev": "./node_modules/.bin/nodemon bin/www -i ./public",
+    "prd": "pm2 start bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pkg": "pkg .  --out-path dist"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "debug": "^4.1.1",
+    "ejs": "^3.0.2",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-json": "^2.0.2",
+    "koa-log4": "^2.3.2",
+    "koa-logger": "^3.2.0",
+    "koa-onerror": "^4.1.0",
+    "koa-redis": "^4.0.1",
+    "koa-router": "^8.0.8",
+    "koa-session": "^5.13.1",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.0",
+    "node-hid": "^1.2.0",
+    "sm3": "^1.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.2"
+  },
+  "pkg": {
+    "assets": [
+      "public/**/*",
+      "server/views/*"
+    ],
+    "targets": [
+      "node10-win-x64",
+      "node10-linux-x64"
+    ]
+  }
+}
