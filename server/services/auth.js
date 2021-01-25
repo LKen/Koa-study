@@ -66,8 +66,8 @@ module.exports = {
     const res = await axios
       .get(conf.proxy + '/soms/access/token', {
         params: {
-          'user': 'admin',
-          'secret': 'admin'
+          'user': 'some',
+          'secret': 'some'
         }
       })
     if (res.status === 200 && res.data.errorCode === 0) {
