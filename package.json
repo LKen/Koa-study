@@ -11,7 +11,7 @@
     "pkg": "pkg .  --out-path dist"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "debug": "^4.1.1",
     "ejs": "^3.0.2",
     "koa": "^2.11.0",
