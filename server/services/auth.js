@@ -56,7 +56,7 @@ module.exports = {
     // console.log(KeyPath)
 
     // ? 这里的规则需要和前端一样
-    return mSoftKey.StrEnc(plaint + '@@' + _ukey_id, _ukey).toUpperCase() === encrypt.toUpperCase()
+    return mSoftKey.StrEnc(plaint + 'somekey here' + _ukey_id, _ukey).toUpperCase() === encrypt.toUpperCase()
   },
 
   /**
